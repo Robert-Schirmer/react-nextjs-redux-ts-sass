@@ -7,6 +7,9 @@ import NextLogo from '../imgs/nextjs-logo.png'
 import ReduxLogo from '../imgs/redux-logo.png'
 // @ts-ignore
 import TSLogo from '../imgs/ts-logo.png'
+// @ts-ignore
+import SassLogo from '../imgs/sass-logo.png'
+
 
 const Logos = () => {
 
@@ -30,6 +33,11 @@ const Logos = () => {
             <div className="item">
                 <a href="https://www.typescriptlang.org/" target="_blank">
                     <img src={TSLogo} className="logo-img" />
+                </a>
+            </div>
+            <div className="item">
+                <a href="https://sass-lang.com/" target="_blank">
+                    <img src={SassLogo} className="logo-img" />
                 </a>
             </div>
         </div>
