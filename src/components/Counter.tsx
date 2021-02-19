@@ -16,10 +16,10 @@ const CountTracker = () => {
             </div>
             <div className="item container-row spacing-1">
                 <div className="item">
-                    <button onClick={() => dispatch(increment(10))}>+</button>
+                    <button className="button1" onClick={() => dispatch(increment(10))}>&nbsp;+&nbsp;</button>
                 </div>
                 <div className="item">
-                    <button onClick={() => dispatch(decrement(10))}>-</button>
+                    <button className="button1" onClick={() => dispatch(decrement(10))}>&nbsp;-&nbsp;</button>
                 </div>
             </div>
         </div>

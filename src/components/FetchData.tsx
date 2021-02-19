@@ -20,12 +20,14 @@ const FetchData = () => {
             <div className="item">
                 <h2 className="textColorPrimary">Data Fetcher</h2>
             </div>
-            <div className="item container-row spacing-1">
+            <div className="item container-row align-center spacing-1">
                 <div className="item">
                     <h4 className="textColorSecondary">{loadingStatus}</h4>
                 </div>
                 <div className="item">
-                    <button onClick={() => dispatch(fetchData('https://jsonplaceholder.typicode.com/users'))}>
+                    <button className="button1"
+                        style={loadingStatus === PENDING ? { opacity: 0.7 } : undefined}
+                        onClick={() => dispatch(fetchData('https://jsonplaceholder.typicode.com/users'))}>
                         {loadingStatus === PENDING ? "Loading" : "Fetch"}
                     </button>
                 </div>
