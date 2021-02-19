@@ -1,4 +1,4 @@
-# ReactJS, Next.js, Redux, TypeScript, and Sass template project
+## ReactJS, Next.js, Redux, TypeScript, and Sass template project
 
 To get started
 ```
