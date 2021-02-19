@@ -1,0 +1,48 @@
+// For laying out elements on a page in a grid format
+
+$grid__bp-md: 768;
+
+.container {
+  max-width: $grid__bp-md * 1px;
+  margin: 0 auto;
+  display: flex;
+  width: '100%';
+  &-row {
+    @extend .container;
+    flex-direction: row;
+  }
+
+  &-column {
+    @extend .container;
+    flex-direction: column;
+  }
+}
+
+.item {
+  display: flex;
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+}
+
+.align {
+  &-center {
+    align-items: center;
+  }
+}
+
+.spacing {
+  &-1 {
+    & > .item {
+      padding: 10px;
+    }
+  }
+  &-2 {
+    & > .item {
+      padding: 20px;
+    }
+  }
+}

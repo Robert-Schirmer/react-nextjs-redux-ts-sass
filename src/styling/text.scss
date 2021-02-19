@@ -1,0 +1,28 @@
+// Handles all text formatting
+@import 'theme.scss';
+
+$font-path: "/fonts/" !default;
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    src: url($font-path+'Louis-George-Cafe.ttf');
+}
+
+.textColorSecondary {
+    color: $secondary
+}
+
+.textColorThir
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: $primary;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+    font-family: 'Louis George Cafe';
+}
