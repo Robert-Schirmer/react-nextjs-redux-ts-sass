@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchData } from '../redux/reducers/fetchData';
 import { RootState } from '../redux/reducers';
 import { PENDING } from '../redux/reducers/fetchData/types';
+import LoadingIcon from './LoadingIcon';
 
 const selectLoadingStatus = (state: RootState) => state.responseData.loading
 const selectResponseData = (state: RootState) => state.responseData.data
@@ -22,7 +23,12 @@ const FetchData = () => {
             </div>
             <div className="item container-row align-center spacing-1">
                 <div className="item">
-                    <h4 className="textColorSecondary">{loadingStatus}</h4>
+                    {
+                        loadingStatus === PENDING ?
+                            <LoadingIcon />
+                            :
+                            <h4 className="textColorSecondary">{loadingStatus}</h4>
+                    }
                 </div>
                 <div className="item">
                     <button className="button1"

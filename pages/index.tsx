@@ -2,6 +2,7 @@ import Layout from '../src/components/Layout'
 import CountTracker from '../src/components/Counter'
 import Logos from '../src/components/Logos'
 import FetchData from '../src/components/FetchData'
+import LoadingIcon from '../src/components/LoadingIcon'
 
 const Index = () => {
 
@@ -21,6 +22,9 @@ const Index = () => {
         </div>
         <div className="item container-row justify-center align-center">
           <CountTracker />
+        </div>
+        <div className="item container-row justify-center align-center">
+          <LoadingIcon />
         </div>
         <div className="item container-row justify-center align-center">
           <FetchData />
