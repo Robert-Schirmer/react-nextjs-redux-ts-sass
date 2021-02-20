@@ -1,0 +1,44 @@
+@import '../../styling/theme.scss';
+
+@mixin dot($size) {
+    height: $size;
+    width: $size;
+    border-radius: $size;
+}
+
+@mixin animationdelay($delay) {
+    // Animate with delay
+    animation: grow 0.8s linear infinite;
+    animation-delay: $delay;
+}
+
+.dot1 {
+    @include dot(10px);
+    @include animationdelay(0s);
+    background-color: #B3F2DD;
+}
+
+.dot2 {
+    @include dot(10px);
+    @include animationdelay(0.2s);
+    background-color: #EE4266
+}
+
+.dot3 {
+    @include dot(10px);
+    @include animationdelay(0.4s);
+    background-color: #FFD23F;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.7);
+        box-shadow: $boxShadow;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
