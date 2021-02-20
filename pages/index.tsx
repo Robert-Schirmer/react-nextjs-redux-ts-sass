@@ -17,14 +17,14 @@ const Index = () => {
             <h2>Hello ReactJS, Redux, Next.js, and Typescript 👋</h2>
           </div>
           <div className="item">
+            <LoadingIcon />
+          </div>
+          <div className="item">
             <h3><i>A template app</i></h3>
           </div>
         </div>
         <div className="item container-row justify-center align-center">
           <CountTracker />
-        </div>
-        <div className="item container-row justify-center align-center">
-          <LoadingIcon />
         </div>
         <div className="item container-row justify-center align-center">
           <FetchData />
