@@ -25,11 +25,23 @@ $grid__bp-md: 768;
   &-center {
     justify-content: center;
   }
+  &-left {
+    justify-content: flex-start;
+  }
+  &-right {
+    justify-content: flex-end;
+  }
 }
 
 .align {
   &-center {
     align-items: center;
+  }
+  &-left {
+    align-items: flex-start;
+  }
+  &-right {
+    align-items: flex-end;
   }
 }
 
